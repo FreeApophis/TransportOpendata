@@ -30,7 +30,7 @@ module Transport
     end
 	
     def board_for station
-      parse_filter(self.class.get(restful_url('stationboard'), @options.merge(query: { station: station, limit: 1})))
+      parse_filter(self.class.get(restful_url('stationboard'), @options.merge(query: { station: station, limit: 15})))
     end
     
     private

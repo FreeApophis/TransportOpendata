@@ -4,21 +4,22 @@
 
 require_relative 'checkpoint'
 require_relative 'service'
-require_relative 'prognosis'
+require_relative 'section'
+require_relative 'duration'
 
 module Transport
   class Connection
-    attr_reader :from, :to, :duration, :service, :products, :capacity1st, :capacity2nd, :prognosis
+    attr_reader :from, :to, :duration, :service, :products, :capacity1st, :capacity2nd, :sections
     
     def initialize(connection)
       @from = Checkpoint.new connection['from']
       @to = Checkpoint.new connection['to']
-      @duration = connection['duration']
+      @duration = Duration.new connection['duration']
       @service = Service.new connection['service']
       @products = connection['products']
       @capacity1st = connection['capacity1st']
       @capacity2nd = connection['capacity2nd']
-      @prognosis = Prognosis.new connection['prognosis']
+      @sections = connection['sections'].map { |section| Section .new section }
     end
   end
 end

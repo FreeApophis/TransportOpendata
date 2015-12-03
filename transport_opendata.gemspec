@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'transport_opendata'
-  s.version     = '0.8.1'
+  s.version     = '0.8.2'
   s.date        = '2016-12-03'
   s.summary     = "Swiss Public Transport API"
   s.description = "Access to the Swiss Public Transport API of transport.opendata.ch"

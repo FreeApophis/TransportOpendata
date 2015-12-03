@@ -8,10 +8,10 @@ module Transport
     
 	def initialize(prognosis)
       return unless prognosis
-      
+
       @platform = prognosis['platform']
-      @departure = prognosis['departure']
-      @arrival = prognosis['arrival']
+      @departure = DateTime.parse prognosis['departure'] if prognosis['departure'] 
+      @arrival = DateTime.parse prognosis['arrival'] if prognosis['arrival'] 
       @capacity1st = prognosis['capacity1st']
       @capacity2nd = prognosis['capacity2nd']
 	end
