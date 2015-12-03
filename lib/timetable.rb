@@ -15,19 +15,11 @@ module Transport
 	
     # default_params :output => 'json'
   
-    def initialize()
+    def initialize
 	  @version = 'v1'
       @parse = true
       @options = { query: {  } }
 	end
-  
-    def parse_filter unparsed_result
-      if @parse
-        TransportFactory::create(unparsed_result)
-      else
-        unparsed_result
-      end
-    end
   
     def search_station station_partial
       parse_filter(self.class.get(restful_url('locations'), @options.merge(query: { query: station_partial})))
@@ -45,5 +37,14 @@ module Transport
     def restful_url page
       "/#{@version}/#{page}"
     end 
+    
+    def parse_filter unparsed_result
+      if @parse
+        TransportFactory::create(unparsed_result)
+      else
+        unparsed_result
+      end
+    end
+
  end
 end

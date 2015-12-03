@@ -2,7 +2,6 @@
 # Journey
 #
 
-require 'httparty'
 require_relative 'checkpoint'
 
 module Transport

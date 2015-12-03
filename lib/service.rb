@@ -2,8 +2,6 @@
 # Service
 #
 
-require 'httparty'
-
 module Transport
   class Service
     attr_reader :regular, :irregular

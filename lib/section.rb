@@ -2,8 +2,6 @@
 # Section
 #
 
-require 'httparty'
-
 module Transport
   class Section
     attr_reader :journey, :walk, :departure, :arrival

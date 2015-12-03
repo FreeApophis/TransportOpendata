@@ -2,8 +2,6 @@
 # Coordinate
 #
 
-require 'httparty'
-
 module Transport
   class Coordinate
     attr_reader :type, :x, :y

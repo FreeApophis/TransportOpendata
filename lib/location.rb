@@ -2,7 +2,6 @@
 # Locations
 #
 
-require 'httparty'
 require_relative 'coordinate'
 
 module Transport

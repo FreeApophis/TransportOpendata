@@ -2,7 +2,6 @@
 # Connection
 #
 
-require 'httparty'
 require_relative 'checkpoint'
 require_relative 'service'
 require_relative 'prognosis'

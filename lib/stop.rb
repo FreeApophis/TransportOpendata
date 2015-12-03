@@ -2,8 +2,6 @@
 # Stop
 #
 
-require 'httparty'
-
 module Transport
   class Stop
     attr_reader :station, :name, :category, :number, :operator, :to

@@ -2,8 +2,6 @@
 # Prognosis
 #
 
-require 'httparty'
-
 module Transport
   class Prognosis
     attr_reader :platform, :departure, :arrival, :capacity1st, :capacity2nd

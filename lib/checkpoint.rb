@@ -10,8 +10,8 @@ module Transport
     
 	def initialize(checkpoint)
 	  @station = Location.new checkpoint['station']
-      @arrival = checkpoint['arrival']
-      @departure = checkpoint['departure']
+      @arrival = DateTime.parse(checkpoint['arrival']) if checkpoint['arrival']
+      @departure = DateTime.parse(checkpoint['departure']) if checkpoint['departure']
       @platform = checkpoint['platform']
       @prognosis = Prognosis.new checkpoint['prognosis']
 	end
