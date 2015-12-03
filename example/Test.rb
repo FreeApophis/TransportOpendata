@@ -3,7 +3,7 @@
 # ----------------------
 
 require 'pp'
-require 'transport_opendata'
+require 'transport-opendata'
 
 timetable = Transport::Timetable.new
 

@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'transport_opendata'
+  s.name        = 'transport-opendata'
   s.version     = '0.8.2'
   s.date        = '2016-12-03'
   s.summary     = "Swiss Public Transport API"
@@ -10,5 +10,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/FreeApophis/TransportOpendata'
   s.license       = 'MIT'
   
-  s.add_runtime_dependency('httparty')
+  s.add_runtime_dependency 'httparty', '~> 0'
 end

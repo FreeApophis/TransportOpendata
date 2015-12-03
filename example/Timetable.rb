@@ -4,7 +4,7 @@
 # ----------------------------
 #
 
-require 'transport_opendata'
+require 'transport-opendata'
 require 'optparse'
 require 'terminal-table'
 

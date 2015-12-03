@@ -7,7 +7,7 @@ Simple library which gives direct Object Oriented Access to the bare information
 Howto:
 
 ```ruby
-require 'TransportOpenData'
+require 'transport-opendata'
 
 timetable = Transport::Timetable.new
 
