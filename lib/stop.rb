@@ -6,7 +6,7 @@ module Transport
   class Stop
     attr_reader :station, :name, :category, :number, :operator, :to
     
-	def initialize(stop)
+    def initialize(stop)
       return unless stop
       
       @station = Location.new stop['station']
@@ -15,6 +15,6 @@ module Transport
       @number = stop['number']
       @operator = stop['operator']
       @to = stop['to']
-	end
+    end
   end
 end

@@ -6,13 +6,13 @@ module Transport
   class Duration
     attr_reader :seconds, :minutes, :hours, :days
     
-	def initialize(duration)
+    def initialize(duration)
       @days, @hours, @minutes, @seconds = duration.split(/d|:/)
       @seconds = @seconds.to_i
       @minutes = @minutes.to_i
       @hours = @hours.to_i
       @days = @days.to_i
-	end
+    end
       
     def to_s
       result = ""
