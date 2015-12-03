@@ -3,10 +3,10 @@
 # ----------------------
 
 require 'pp'
-require_relative 'TransportOpenData/client'
+require 'transport_opendata'
 
-client = Transport::Client.new
+timetable = Transport::Timetable.new
 
-# pp client.search_station 'Altstetten'
-# pp client.search_connection 'Spreitenbach, IKEA', 'Zürich Altstetten'
-pp client.board_for 'Altstetten'
+pp timetable.search_station 'Altstetten'
+pp timetable.search_connection 'Spreitenbach, IKEA', 'Zürich Altstetten'
+pp timetable.board_for 'Altstetten'

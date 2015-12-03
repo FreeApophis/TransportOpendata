@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "Access to the Swiss Public Transport API of transport.opendata.ch"
   s.authors     = ["Thomas Bruderer"]
   s.email       = 'apophis@apophis.ch'
-  s.files       = `git ls-files lib README.md`.split("\n")
+  s.files       = Dir['lib/*.rb']
   s.homepage    = 'https://github.com/FreeApophis/TransportOpendata'
   s.license       = 'MIT'
 end
